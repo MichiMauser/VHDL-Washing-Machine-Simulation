@@ -1,0 +1,3255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="width" val="3"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <boardmap boardname="BASYS3">
+      <mc key="/ButonTemp" map="582,238"/>
+      <mc key="/Clk100MHZ" map="321,237"/>
+      <mc key="/Mod1" map="154,323"/>
+      <mc key="/Mod2" map="192,323"/>
+      <mc key="/Mod3" map="228,323"/>
+      <mc key="/Mod4" map="268,323"/>
+      <mc key="/Output_1" map="577,295"/>
+      <mc key="/Output_2" map="612,295"/>
+      <mc key="/Output_3" map="649,295"/>
+      <mc key="/Start" map="536,235"/>
+      <mc key="/SwitchTemp" pmap="535_323_0,571_323_0,609_323_0"/>
+      <mc key="/anod" pmap="273_234_0,225_234_0,180_234_0,130_234_0"/>
+      <mc key="/catod" pmap="136_245_0,154_248_0,154_262_0,136_274_0,130_263_0,130_249_0,138_258_0"/>
+      <mc key="/door" map="78,323"/>
+      <mc key="/doorled" map="92,295"/>
+      <mc key="/erled" map="499,295"/>
+      <mc key="/extrarinsesw" map="341,323"/>
+      <mc key="/finishled" map="465,295"/>
+      <mc key="/manualsw" map="117,323"/>
+      <mc key="/prewashsw" map="382,323"/>
+      <mc key="/pwled" map="538,295"/>
+      <mc key="/rst" map="647,323"/>
+      <mc key="/selmodkled" pmap="131_295_0,168_295_0,203_295_0,241_295_0,278_295_0"/>
+      <mc key="/stage0" map="315,295"/>
+      <mc key="/stage1" map="353,295"/>
+      <mc key="/stage2" map="389,295"/>
+      <mc key="/stage3" map="425,295"/>
+    </boardmap>
+    <comp lib="0" loc="(1190,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="doorled"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1190,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="selmodkled"/>
+      <a name="output" val="true"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(1190,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="finishled"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1190,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_3"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1200,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1210,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1330,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="pwled"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1380,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="erled"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(150,660)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ButonTemp"/>
+    </comp>
+    <comp lib="0" loc="(2260,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="stage3"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2260,510)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="stage2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2260,630)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="stage1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2330,760)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="stage0"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(3040,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="anod"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(3040,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="catod"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(390,1000)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Mod3"/>
+    </comp>
+    <comp lib="0" loc="(390,1020)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Mod4"/>
+    </comp>
+    <comp lib="0" loc="(390,960)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Mod1"/>
+    </comp>
+    <comp lib="0" loc="(390,980)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Mod2"/>
+    </comp>
+    <comp lib="0" loc="(40,560)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Clk100MHZ"/>
+    </comp>
+    <comp lib="0" loc="(70,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Start"/>
+    </comp>
+    <comp lib="0" loc="(830,1000)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="SwitchTemp"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(840,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="manualsw"/>
+    </comp>
+    <comp lib="0" loc="(970,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="door"/>
+    </comp>
+    <comp lib="0" loc="(970,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="rst"/>
+    </comp>
+    <comp lib="0" loc="(970,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="prewashsw"/>
+    </comp>
+    <comp lib="0" loc="(970,290)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="extrarinsesw"/>
+    </comp>
+    <comp loc="(1050,960)" name="CodificatorAuto">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="codificatorauto_1"/>
+    </comp>
+    <comp loc="(1190,190)" name="UC">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="uc_1"/>
+    </comp>
+    <comp loc="(1320,960)" name="DecoderAuto">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="decoderauto_1"/>
+    </comp>
+    <comp loc="(1440,850)" name="Mux_Temperature">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_temperature_1"/>
+    </comp>
+    <comp loc="(1730,150)" name="mux_final_time">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_final_time_1"/>
+    </comp>
+    <comp loc="(1830,440)" name="MUX_STAGE3_TIME">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_stage3_time_1"/>
+    </comp>
+    <comp loc="(1830,640)" name="MUX_STAGE1_TIME">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_stage1_time_1"/>
+    </comp>
+    <comp loc="(1830,760)" name="MUX_STAGE0_TIME">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_stage0_time_1"/>
+    </comp>
+    <comp loc="(1840,540)" name="MUX_STAGE2_TIME">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="mux_stage2_time_1"/>
+    </comp>
+    <comp loc="(2090,130)" name="NumaratorCicluSpalare">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numaratorcicluspalare_1"/>
+    </comp>
+    <comp loc="(2170,750)" name="Numarator_stage0">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_stage0_1"/>
+    </comp>
+    <comp loc="(2190,610)" name="Numarator_stage1">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_stage1_1"/>
+    </comp>
+    <comp loc="(2200,490)" name="Numarator_stage2">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_stage2_1"/>
+    </comp>
+    <comp loc="(2220,380)" name="Numarator_stage3">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_stage3_1"/>
+    </comp>
+    <comp loc="(2660,210)" name="converter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="converter_1"/>
+    </comp>
+    <comp loc="(2740,390)" name="Divizor_200HZ">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="divizor_200hz_1"/>
+    </comp>
+    <comp loc="(280,560)" name="div1sec">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="div1sec_1"/>
+    </comp>
+    <comp loc="(290,150)" name="DEBOUNCER_3SEC">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="debouncer_3sec_1"/>
+    </comp>
+    <comp loc="(3040,200)" name="ssd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ssd_1"/>
+    </comp>
+    <comp loc="(380,660)" name="debounce_1">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="debounce_1_1"/>
+    </comp>
+    <comp loc="(580,40)" name="muxfinaltime2">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="muxfinaltime2_1"/>
+    </comp>
+    <comp loc="(610,960)" name="Verficare1ModAuto">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="verficare1modauto_1"/>
+    </comp>
+    <comp loc="(660,660)" name="Inel">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="inel_1"/>
+    </comp>
+    <comp loc="(930,750)" name="TimeCalculatorManual">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="timecalculatormanual_1"/>
+    </comp>
+    <wire from="(10,170)" to="(10,540)"/>
+    <wire from="(10,170)" to="(70,170)"/>
+    <wire from="(10,540)" to="(240,540)"/>
+    <wire from="(1040,1120)" to="(1350,1120)"/>
+    <wire from="(1040,640)" to="(1040,1120)"/>
+    <wire from="(1050,960)" to="(1080,960)"/>
+    <wire from="(1080,900)" to="(1080,960)"/>
+    <wire from="(1080,960)" to="(1100,960)"/>
+    <wire from="(1100,550)" to="(1100,830)"/>
+    <wire from="(1100,550)" to="(1390,550)"/>
+    <wire from="(1150,560)" to="(1150,810)"/>
+    <wire from="(1150,560)" to="(1620,560)"/>
+    <wire from="(1160,830)" to="(1160,890)"/>
+    <wire from="(1160,830)" to="(1240,830)"/>
+    <wire from="(1160,890)" to="(1220,890)"/>
+    <wire from="(1170,850)" to="(1170,940)"/>
+    <wire from="(1170,850)" to="(1220,850)"/>
+    <wire from="(1170,940)" to="(1380,940)"/>
+    <wire from="(1190,230)" to="(1330,230)"/>
+    <wire from="(1190,250)" to="(1380,250)"/>
+    <wire from="(1190,290)" to="(1880,290)"/>
+    <wire from="(1190,310)" to="(1890,310)"/>
+    <wire from="(1190,330)" to="(1920,330)"/>
+    <wire from="(1190,350)" to="(1990,350)"/>
+    <wire from="(1190,370)" to="(1860,370)"/>
+    <wire from="(1190,390)" to="(1210,390)"/>
+    <wire from="(1190,410)" to="(1200,410)"/>
+    <wire from="(1190,450)" to="(1190,490)"/>
+    <wire from="(1190,490)" to="(1490,490)"/>
+    <wire from="(1240,480)" to="(1240,510)"/>
+    <wire from="(1240,480)" to="(1610,480)"/>
+    <wire from="(1240,510)" to="(1240,580)"/>
+    <wire from="(1240,580)" to="(1240,610)"/>
+    <wire from="(1240,580)" to="(1620,580)"/>
+    <wire from="(1240,610)" to="(1240,680)"/>
+    <wire from="(1240,680)" to="(1240,800)"/>
+    <wire from="(1240,680)" to="(1610,680)"/>
+    <wire from="(1240,800)" to="(1240,830)"/>
+    <wire from="(1240,800)" to="(1610,800)"/>
+    <wire from="(1290,140)" to="(1290,260)"/>
+    <wire from="(1290,260)" to="(1640,260)"/>
+    <wire from="(1320,1000)" to="(1470,1000)"/>
+    <wire from="(1320,1020)" to="(1500,1020)"/>
+    <wire from="(1320,1040)" to="(1350,1040)"/>
+    <wire from="(1320,1060)" to="(1380,1060)"/>
+    <wire from="(1320,960)" to="(1520,960)"/>
+    <wire from="(1320,980)" to="(1540,980)"/>
+    <wire from="(1330,150)" to="(1330,190)"/>
+    <wire from="(1330,190)" to="(1330,230)"/>
+    <wire from="(1350,1040)" to="(1350,1120)"/>
+    <wire from="(1380,120)" to="(1380,190)"/>
+    <wire from="(1380,190)" to="(1380,250)"/>
+    <wire from="(1380,940)" to="(1380,1060)"/>
+    <wire from="(1390,460)" to="(1390,550)"/>
+    <wire from="(1390,460)" to="(1610,460)"/>
+    <wire from="(1440,530)" to="(1440,850)"/>
+    <wire from="(1450,110)" to="(1450,170)"/>
+    <wire from="(1450,110)" to="(2090,110)"/>
+    <wire from="(1450,170)" to="(1510,170)"/>
+    <wire from="(1470,130)" to="(1470,150)"/>
+    <wire from="(1470,130)" to="(1820,130)"/>
+    <wire from="(1470,150)" to="(1510,150)"/>
+    <wire from="(1470,20)" to="(1470,130)"/>
+    <wire from="(1470,540)" to="(1470,1000)"/>
+    <wire from="(1470,540)" to="(1620,540)"/>
+    <wire from="(1490,190)" to="(1490,490)"/>
+    <wire from="(1490,190)" to="(1510,190)"/>
+    <wire from="(150,660)" to="(160,660)"/>
+    <wire from="(1500,430)" to="(1500,1020)"/>
+    <wire from="(1500,430)" to="(1610,430)"/>
+    <wire from="(1520,750)" to="(1520,960)"/>
+    <wire from="(1520,750)" to="(1610,750)"/>
+    <wire from="(1540,640)" to="(1540,980)"/>
+    <wire from="(1540,640)" to="(1610,640)"/>
+    <wire from="(1600,770)" to="(1600,780)"/>
+    <wire from="(1600,780)" to="(1610,780)"/>
+    <wire from="(1610,430)" to="(1610,440)"/>
+    <wire from="(1610,750)" to="(1610,760)"/>
+    <wire from="(1640,230)" to="(1640,260)"/>
+    <wire from="(1640,230)" to="(1760,230)"/>
+    <wire from="(1730,150)" to="(1790,150)"/>
+    <wire from="(1760,190)" to="(1760,230)"/>
+    <wire from="(1760,190)" to="(1870,190)"/>
+    <wire from="(1760,230)" to="(1950,230)"/>
+    <wire from="(1790,150)" to="(1790,210)"/>
+    <wire from="(1790,210)" to="(2440,210)"/>
+    <wire from="(1820,130)" to="(1820,150)"/>
+    <wire from="(1820,150)" to="(1870,150)"/>
+    <wire from="(1830,170)" to="(1830,250)"/>
+    <wire from="(1830,170)" to="(1870,170)"/>
+    <wire from="(1830,250)" to="(2380,250)"/>
+    <wire from="(1830,440)" to="(1900,440)"/>
+    <wire from="(1830,640)" to="(1850,640)"/>
+    <wire from="(1830,760)" to="(1870,760)"/>
+    <wire from="(1840,540)" to="(1950,540)"/>
+    <wire from="(1850,640)" to="(1850,650)"/>
+    <wire from="(1850,650)" to="(1970,650)"/>
+    <wire from="(1860,130)" to="(1860,370)"/>
+    <wire from="(1860,130)" to="(1870,130)"/>
+    <wire from="(1870,760)" to="(1870,780)"/>
+    <wire from="(1870,780)" to="(1940,780)"/>
+    <wire from="(1880,290)" to="(1880,760)"/>
+    <wire from="(1880,760)" to="(1940,760)"/>
+    <wire from="(1890,310)" to="(1890,630)"/>
+    <wire from="(1890,630)" to="(1970,630)"/>
+    <wire from="(1900,410)" to="(1900,440)"/>
+    <wire from="(1900,410)" to="(2000,410)"/>
+    <wire from="(1900,480)" to="(1900,500)"/>
+    <wire from="(1900,480)" to="(1950,480)"/>
+    <wire from="(1900,500)" to="(1900,610)"/>
+    <wire from="(1900,500)" to="(1980,500)"/>
+    <wire from="(1900,610)" to="(1900,740)"/>
+    <wire from="(1900,610)" to="(1970,610)"/>
+    <wire from="(1900,740)" to="(1940,740)"/>
+    <wire from="(1920,330)" to="(1920,510)"/>
+    <wire from="(1920,510)" to="(1980,510)"/>
+    <wire from="(1930,430)" to="(1930,550)"/>
+    <wire from="(1930,430)" to="(2000,430)"/>
+    <wire from="(1930,550)" to="(1930,670)"/>
+    <wire from="(1930,550)" to="(1980,550)"/>
+    <wire from="(1930,670)" to="(1930,800)"/>
+    <wire from="(1930,670)" to="(1970,670)"/>
+    <wire from="(1930,800)" to="(1930,920)"/>
+    <wire from="(1930,800)" to="(1940,800)"/>
+    <wire from="(1930,920)" to="(1930,1170)"/>
+    <wire from="(1930,920)" to="(2620,920)"/>
+    <wire from="(1940,740)" to="(1940,750)"/>
+    <wire from="(1940,750)" to="(1950,750)"/>
+    <wire from="(1940,760)" to="(1940,770)"/>
+    <wire from="(1940,770)" to="(1950,770)"/>
+    <wire from="(1940,780)" to="(1940,790)"/>
+    <wire from="(1940,790)" to="(1950,790)"/>
+    <wire from="(1940,800)" to="(1940,810)"/>
+    <wire from="(1940,810)" to="(1950,810)"/>
+    <wire from="(1950,230)" to="(1950,370)"/>
+    <wire from="(1950,370)" to="(1950,480)"/>
+    <wire from="(1950,370)" to="(2000,370)"/>
+    <wire from="(1950,530)" to="(1950,540)"/>
+    <wire from="(1950,530)" to="(1980,530)"/>
+    <wire from="(1980,490)" to="(1980,500)"/>
+    <wire from="(1990,350)" to="(1990,400)"/>
+    <wire from="(1990,400)" to="(2000,400)"/>
+    <wire from="(2000,370)" to="(2000,380)"/>
+    <wire from="(2000,410)" to="(2000,420)"/>
+    <wire from="(2000,430)" to="(2000,440)"/>
+    <wire from="(2090,110)" to="(2090,130)"/>
+    <wire from="(2170,750)" to="(2220,750)"/>
+    <wire from="(2190,610)" to="(2190,630)"/>
+    <wire from="(2190,630)" to="(2260,630)"/>
+    <wire from="(2200,490)" to="(2200,510)"/>
+    <wire from="(2200,510)" to="(2260,510)"/>
+    <wire from="(2220,380)" to="(2220,390)"/>
+    <wire from="(2220,390)" to="(2260,390)"/>
+    <wire from="(2220,750)" to="(2220,760)"/>
+    <wire from="(2220,760)" to="(2330,760)"/>
+    <wire from="(2260,390)" to="(2300,390)"/>
+    <wire from="(2260,510)" to="(2310,510)"/>
+    <wire from="(2260,630)" to="(2320,630)"/>
+    <wire from="(2300,80)" to="(2300,390)"/>
+    <wire from="(2310,70)" to="(2310,510)"/>
+    <wire from="(2320,50)" to="(2320,630)"/>
+    <wire from="(2330,40)" to="(2330,760)"/>
+    <wire from="(2380,250)" to="(2380,500)"/>
+    <wire from="(2380,500)" to="(2620,500)"/>
+    <wire from="(240,520)" to="(240,540)"/>
+    <wire from="(240,520)" to="(340,520)"/>
+    <wire from="(240,540)" to="(280,540)"/>
+    <wire from="(250,1110)" to="(250,1170)"/>
+    <wire from="(250,1170)" to="(1930,1170)"/>
+    <wire from="(2520,390)" to="(2520,1210)"/>
+    <wire from="(2620,500)" to="(2620,920)"/>
+    <wire from="(2660,210)" to="(2770,210)"/>
+    <wire from="(2660,230)" to="(2780,230)"/>
+    <wire from="(2660,250)" to="(2790,250)"/>
+    <wire from="(2740,390)" to="(2820,390)"/>
+    <wire from="(2770,200)" to="(2770,210)"/>
+    <wire from="(2770,200)" to="(2820,200)"/>
+    <wire from="(2780,220)" to="(2780,230)"/>
+    <wire from="(2780,220)" to="(2820,220)"/>
+    <wire from="(2790,240)" to="(2790,250)"/>
+    <wire from="(2790,240)" to="(2820,240)"/>
+    <wire from="(280,540)" to="(280,560)"/>
+    <wire from="(2820,260)" to="(2820,390)"/>
+    <wire from="(290,150)" to="(830,150)"/>
+    <wire from="(290,310)" to="(290,600)"/>
+    <wire from="(290,310)" to="(970,310)"/>
+    <wire from="(320,40)" to="(320,430)"/>
+    <wire from="(320,40)" to="(360,40)"/>
+    <wire from="(320,430)" to="(910,430)"/>
+    <wire from="(340,450)" to="(930,450)"/>
+    <wire from="(340,520)" to="(340,630)"/>
+    <wire from="(340,60)" to="(340,450)"/>
+    <wire from="(340,60)" to="(360,60)"/>
+    <wire from="(360,130)" to="(460,130)"/>
+    <wire from="(360,80)" to="(360,130)"/>
+    <wire from="(380,660)" to="(440,660)"/>
+    <wire from="(40,1040)" to="(390,1040)"/>
+    <wire from="(40,1040)" to="(40,1210)"/>
+    <wire from="(40,1210)" to="(2520,1210)"/>
+    <wire from="(40,560)" to="(40,600)"/>
+    <wire from="(40,560)" to="(60,560)"/>
+    <wire from="(40,600)" to="(290,600)"/>
+    <wire from="(40,600)" to="(40,1040)"/>
+    <wire from="(410,330)" to="(410,900)"/>
+    <wire from="(410,330)" to="(970,330)"/>
+    <wire from="(410,900)" to="(1080,900)"/>
+    <wire from="(460,130)" to="(460,610)"/>
+    <wire from="(460,610)" to="(1240,610)"/>
+    <wire from="(580,40)" to="(600,40)"/>
+    <wire from="(600,20)" to="(1470,20)"/>
+    <wire from="(600,20)" to="(600,40)"/>
+    <wire from="(610,960)" to="(700,960)"/>
+    <wire from="(610,980)" to="(640,980)"/>
+    <wire from="(630,350)" to="(970,350)"/>
+    <wire from="(630,40)" to="(2330,40)"/>
+    <wire from="(630,40)" to="(630,350)"/>
+    <wire from="(640,370)" to="(970,370)"/>
+    <wire from="(640,50)" to="(2320,50)"/>
+    <wire from="(640,50)" to="(640,370)"/>
+    <wire from="(640,940)" to="(640,980)"/>
+    <wire from="(640,940)" to="(730,940)"/>
+    <wire from="(650,390)" to="(970,390)"/>
+    <wire from="(650,70)" to="(2310,70)"/>
+    <wire from="(650,70)" to="(650,390)"/>
+    <wire from="(660,410)" to="(970,410)"/>
+    <wire from="(660,660)" to="(660,790)"/>
+    <wire from="(660,790)" to="(710,790)"/>
+    <wire from="(660,80)" to="(2300,80)"/>
+    <wire from="(660,80)" to="(660,410)"/>
+    <wire from="(680,710)" to="(680,770)"/>
+    <wire from="(680,710)" to="(760,710)"/>
+    <wire from="(680,770)" to="(710,770)"/>
+    <wire from="(70,1110)" to="(250,1110)"/>
+    <wire from="(70,630)" to="(340,630)"/>
+    <wire from="(70,630)" to="(70,680)"/>
+    <wire from="(70,680)" to="(160,680)"/>
+    <wire from="(70,680)" to="(70,1110)"/>
+    <wire from="(700,960)" to="(700,980)"/>
+    <wire from="(700,980)" to="(830,980)"/>
+    <wire from="(710,100)" to="(710,750)"/>
+    <wire from="(710,100)" to="(850,100)"/>
+    <wire from="(730,940)" to="(730,960)"/>
+    <wire from="(730,960)" to="(830,960)"/>
+    <wire from="(760,120)" to="(1380,120)"/>
+    <wire from="(760,120)" to="(760,710)"/>
+    <wire from="(830,150)" to="(830,210)"/>
+    <wire from="(830,210)" to="(970,210)"/>
+    <wire from="(840,250)" to="(860,250)"/>
+    <wire from="(850,100)" to="(850,150)"/>
+    <wire from="(850,150)" to="(1330,150)"/>
+    <wire from="(860,250)" to="(860,510)"/>
+    <wire from="(860,250)" to="(970,250)"/>
+    <wire from="(860,510)" to="(1240,510)"/>
+    <wire from="(890,140)" to="(1290,140)"/>
+    <wire from="(890,140)" to="(890,220)"/>
+    <wire from="(890,220)" to="(970,220)"/>
+    <wire from="(910,430)" to="(910,640)"/>
+    <wire from="(910,640)" to="(1040,640)"/>
+    <wire from="(930,450)" to="(930,750)"/>
+    <wire from="(930,770)" to="(1600,770)"/>
+    <wire from="(930,790)" to="(940,790)"/>
+    <wire from="(930,810)" to="(1150,810)"/>
+    <wire from="(930,830)" to="(1100,830)"/>
+    <wire from="(930,850)" to="(930,870)"/>
+    <wire from="(930,870)" to="(1220,870)"/>
+    <wire from="(940,660)" to="(1610,660)"/>
+    <wire from="(940,660)" to="(940,790)"/>
+    <wire from="(960,430)" to="(960,530)"/>
+    <wire from="(960,430)" to="(970,430)"/>
+    <wire from="(960,530)" to="(1440,530)"/>
+    <wire from="(970,220)" to="(970,230)"/>
+    <wire from="(980,410)" to="(980,420)"/>
+  </circuit>
+  <vhdl name="div1sec">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Edi Moga
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+ENTITY div1sec IS
+  PORT (
+
+	CLK_100MHZ : in std_logic;
+	CLK_1sec 		 : out std_logic
+    );
+END div1sec;
+
+ARCHITECTURE TypeArchitecture OF div1sec IS
+
+signal semnal : std_logic := '0';
+
+BEGIN
+
+process(CLK_100MHZ)
+
+variable num : integer := 0;
+
+begin
+
+		if rising_edge(CLK_100MHZ) then
+			num := num + 1;
+		
+	if num = 50_000_000  then
+		num := 0;
+		semnal &lt;= not semnal;
+		else
+		semnal &lt;= semnal;
+		end if;
+	end if;
+
+end process;
+
+CLK_1sec &lt;= semnal;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="divizor1min">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Edi Moga
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+ENTITY divizor1min IS
+  PORT (
+
+ 	    CLK_1sec : in std_logic;
+ 	    RST	   : in std_logic;
+ 	    CLK_1m   : out std_logic
+    );
+END divizor1min;
+
+
+
+ARCHITECTURE TypeArchitecture OF divizor1min IS
+
+signal semnal : std_logic := '0';
+
+BEGIN
+	
+	process(CLK_1sec , RST)
+	 variable nr : std_logic_vector(4 downto 0) :=(others =&gt;'0');
+		begin
+			if RST = '1' then
+				nr := (others =&gt; '0');
+				semnal &lt;= '0';
+			else
+				if falling_edge(CLK_1sec) then
+					nr := nr + 1;
+
+				if nr = 30 then
+					nr := (others =&gt; '0');
+					semnal &lt;= not semnal;
+				end if;
+			end if;
+			end if;
+			
+		end process;
+
+
+CLK_1m &lt;= semnal;
+END TypeArchitecture;</vhdl>
+  <vhdl name="debounce_1">
+
+--Autor : Edi Moga
+
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY debounce_1 IS
+  PORT (
+ 	BUT: in std_logic;
+ 	CLK_1sec : in std_logic;
+ 	O   : out std_logic
+    );
+END debounce_1;
+
+
+ARCHITECTURE struct OF debounce_1 IS
+
+COMPONENT bistabil IS 
+	PORT(
+		D: in std_logic;
+		CLK  : in std_logic;
+		Q  : out std_logic
+	);
+END COMPONENT;
+
+SIGNAL semnal1 : std_logic;
+
+BEGIN
+
+d1: bistabil port map(BUT , CLK_1sec , semnal1);
+
+
+O &lt;= semnal1;
+
+END struct;
+
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY bistabil IS 
+	PORT(
+		D: in std_logic;
+		CLK  : in std_logic;
+		Q  : out std_logic
+	);
+END bistabil;
+
+
+ARCHITECTURE comp of bistabil is
+
+
+BEGIN
+	PROCESS(CLK)
+begin 
+	IF rising_edge(CLK) then Q &lt;= D;
+
+	END IF;
+
+	END PROCESS;
+
+
+END ARCHITECTURE;</vhdl>
+  <vhdl name="DEBOUNCER_3SEC">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY DEBOUNCER_3SEC IS&#13;
+  PORT (&#13;
+
+	Button_Start : in std_logic;
+	CLK_1SEC	   : in std_logic;
+	Delay_3SEC   : out std_logic
+ 	
+    );&#13;
+END DEBOUNCER_3SEC;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF DEBOUNCER_3SEC IS&#13;
+&#13;
+component bistabil_d IS
+  PORT (
+ D,clk: in std_logic;
+ Q:out std_logic
+    );
+END component;
+
+component poarta_si is
+port(
+A,B,C:in std_logic;
+D:out std_logic
+);
+end component;
+signal Y1,Y2,Y3:std_logic;
+BEGIN
+
+C1:bistabil_d port map(Button_Start,CLK_1SEC,Y1);
+C2:bistabil_d port map(Y1,CLK_1SEC,Y2);
+C3:bistabil_d port map(Y2,CLK_1SEC,Y3);
+C4:poarta_si port map(Y1,Y2,Y3,Delay_3SEC);
+END TypeArchitecture;
+
+--- ddddddddddddddddddddddddddddddddddd
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY bistabil_d IS
+  PORT (
+ D,clk: in std_logic;
+ Q:out std_logic
+    );
+END bistabil_d;
+
+ARCHITECTURE comport OF bistabil_d IS
+
+BEGIN
+
+process(clk)
+begin 
+if rising_edge(clk) then
+	Q&lt;=D;
+end if;
+end process;
+END comport;
+
+---poartsiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY poarta_si IS
+  PORT (
+	A,B,C: in std_logic;
+ D: out std_logic
+    );
+END poarta_si;
+
+ARCHITECTURE fluxdedate OF poarta_si IS
+
+BEGIN
+D&lt;=A and B and C;
+
+END fluxdedate;</vhdl>
+  <vhdl name="ssd">-------------------------------------------------------------------------------
+
+
+--Autor : Edi Moga
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+USE ieee.numeric_std.all;
+ENTITY ssd IS
+  PORT (
+  	n1 : in std_logic_vector (3 downto 0);
+  	n2 : in std_logic_vector (3 downto 0);
+  	n3 : in std_logic_vector (3 downto 0);
+  	CLK :  in std_logic;
+  	Anod : out std_logic_vector (3 downto 0);
+  	Catod : out std_logic_vector (6 downto 0)
+
+  	--pozitie : out std_logic_vector (2 downto 0)
+  
+    );
+END ssd;
+
+
+ARCHITECTURE TypeArchitecture OF ssd IS
+
+signal cat : std_logic_vector (6 downto 0) := "0000000";
+signal ano : std_logic_vector (3 downto 0) := "0000";
+
+signal poz : std_logic_vector (2 downto 0) := "000";
+
+signal digit : std_logic_vector (3 downto 0) := "0000";
+
+
+BEGIN
+
+	process(CLK)
+
+	begin
+		if rising_edge(CLK) then
+			poz &lt;= poz +1;
+		end if;
+			
+
+	end process;
+
+	process(poz)	
+		begin
+
+			case poz is
+				--when "00" =&gt;
+					--ano &lt;= "1000";
+
+				--when "01" =&gt;
+				--	ano &lt;= "0100";
+
+				when "001" =&gt;
+					ano &lt;= "0100";
+					digit &lt;= n3;
+				when "010" =&gt;
+					ano &lt;= "0010";
+					digit &lt;= n2 ;
+				when "011" =&gt;
+					ano &lt;= "0001";
+					digit &lt;= n1;
+				when others =&gt;
+					ano &lt;= "0000";
+					digit &lt;= "1111";
+				end case;
+
+		end process;
+
+	process(digit)
+		begin
+
+			case digit is
+				when "0000" =&gt;
+					cat &lt;= "0111111";
+				when x"1" =&gt;
+					cat &lt;= "0000110";
+				when x"2" =&gt;
+					cat &lt;= "1011011";
+				when x"3" =&gt;
+					cat &lt;= "1001111";
+				when x"4" =&gt;
+					cat &lt;= "1100110";
+				when x"5" =&gt;
+					cat &lt;= "1101101";
+				when x"6" =&gt;
+					cat &lt;= "1111101";
+				when x"7" =&gt;
+					cat &lt;= "0100111";
+				when x"8" =&gt;
+					cat &lt;= "1111111";
+				when x"9" =&gt;
+					cat &lt;= "1101111";
+				when others =&gt;
+					cat &lt;= "0000000";
+
+			end case;
+
+		end process;
+
+	Anod &lt;= ano ;
+	Catod &lt;= cat;
+	--pozitie &lt;= poz;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="Divizor_200HZ">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Edi Moga
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Divizor_200HZ IS
+  PORT (
+	CLK_100MHZ : in std_LOGIC;
+	CLK_200HZ	 : out std_logic
+    );
+END Divizor_200HZ;
+
+
+
+ARCHITECTURE TypeArchitecture OF Divizor_200HZ IS
+
+signal semnal : std_logic := '0';
+
+BEGIN
+
+	process(CLK_100MHZ)
+	variable aux : integer := 0;
+		begin
+
+			if rising_edge(CLK_100MHZ) then
+				aux := aux + 1;
+				
+				if aux = 100000 then
+					aux := 0;
+					semnal &lt;= not semnal;
+				else 
+					semnal &lt;= semnal;
+				end if;
+			end if;
+
+		end process;
+
+	
+CLK_200HZ &lt;= semnal;
+
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="TimeCalculatorManual">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;USE ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+ENTITY TimeCalculatorManual IS&#13;
+  PORT (&#13;
+ 	
+	PreWash	 : in std_logic;
+	ExtraRinse : in std_logic;
+	InputTemp : in std_logic_vector (6 downto 0);
+	FullTime  : out std_logic_vector (7 downto 0);
+	Stage0_Time : out std_logic_vector (7 downto 0);
+	Stage1_Time : out std_logic_vector (7 downto 0);
+	Stage2_Time : out std_logic_vector (7 downto 0);
+	Stage3_Time : out std_logic_vector (7 downto 0);
+	
+	OutputTemp : out std_logic_vector (6 downto 0)
+    );&#13;
+END TimeCalculatorManual;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF TimeCalculatorManual IS&#13;
+&#13;
+BEGIN&#13;
+			
+process(PreWash,ExtraRinse,InputTemp)
+variable Time0:std_logic_vector(7 downto 0):=(others=&gt;'0');
+variable Time1:std_logic_vector(7 downto 0):=(others=&gt;'0');
+variable Time2:std_logic_vector(7 downto 0):=(others=&gt;'0');
+variable Time3:std_logic_vector(7 downto 0):=(others=&gt;'0');
+variable Var0:integer:=0;
+variable Var1:integer:=0;
+variable Var2:integer:=0;
+variable Var3:integer:=0;
+variable Var4:integer:=0;
+variable Var5:integer:=0;
+variable FullTimevar:std_logic_vector(7 downto 0):=(others=&gt;'0');
+variable Temp:std_logic_vector(6 downto 0):=(others=&gt;'0');
+begin 
+
+Var5:=to_integer(unsigned(InputTemp));
+	Temp:=std_logic_vector(to_unsigned(Var5,Temp'length));
+			Var3:=28;
+			if Var5=50 then Var1:=24;
+			end if;
+			if Var5=60 then Var1:=34;
+			end if;
+			if Var5=75 then Var1:=49;
+			end if;
+			
+			if PreWash='1' then Var0:=14;
+			else  Var0:=4;
+			end if;
+			if ExtraRinse='1' then Var2:=10;
+			else Var2:=5;
+			end if;
+			
+			
+			Time0:=std_logic_vector(to_unsigned(Var0,Time0'length));
+			Time1:=std_logic_vector(to_unsigned(Var1,Time1'length));
+			Time2:=std_logic_vector(to_unsigned(Var2,Time2'length));
+			Time3:=std_logic_vector(to_unsigned(Var3,Time3'length));
+		
+			var4 := var0+var1+var2+var3;
+			FullTimeVar:=std_logic_vector(to_unsigned(Var4,FullTimevar'length));
+		Stage0_Time&lt;=Time0;
+Stage1_Time&lt;=Time1;
+Stage2_Time&lt;=Time2;
+Stage3_Time&lt;=Time3;
+FullTime&lt;=FullTimevar;
+OutputTemp&lt;=Temp;
+&#13;end process;
+
+
+
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Verficare1ModAuto">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY Verficare1ModAuto IS&#13;
+  PORT (&#13;
+ 	Mod1 : in std_logic;
+ 	Mod2: in std_logic;
+ 	Mod3 : in std_logic;
+ 	Mod4 : in std_logic;
+ 	clk: in std_logic;
+	Mode:out std_logic_vector(3 downto 0);
+ 	Just1Auto : out std_logic
+ 	
+    );&#13;
+END Verficare1ModAuto;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF Verficare1ModAuto IS&#13;
+&#13;
+BEGIN&#13;
+&#13;process(clk)
+&#13;begin
+if Mod1='0' then
+if Mod2='0' then
+if Mod3='0' then
+if Mod4='0' then Just1Auto&lt;='0'; Mode&lt;="0000";
+end if;
+end if;
+end if;
+end if;
+if Mod1='1' then Just1Auto&lt;='1'; Mode&lt;="0001";
+	if Mod2 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod3 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod4 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+end if;
+if Mod2='1' then Just1Auto&lt;='1'; Mode&lt;="0010";
+	if Mod1 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod3 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod4 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+end if;
+if Mod3='1' then Just1Auto&lt;='1'; Mode&lt;="0100";
+	if Mod1 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod2 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod4 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+end if;
+if Mod4='1' then Just1Auto&lt;='1'; Mode&lt;="1000";
+	if Mod1 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod2 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+	if Mod3 ='1' then Just1Auto&lt;='0'; Mode&lt;="0000";
+	end if;
+end if;
+end process;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Inel">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Edi Moga
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Inel IS
+  PORT (
+ 	Btn : in std_logic ;
+ 	nr : out std_logic_vector (6 downto 0)
+    );
+END Inel;
+
+
+
+ARCHITECTURE TypeArchitecture OF Inel IS
+signal test : std_logic_vector (6 downto 0) := (others =&gt; '0');
+signal testbit : std_logic_vector (6 downto 0) := (others =&gt; '0');
+
+signal poz : std_logic_vector (2 downto 0) := "000";
+
+
+BEGIN
+
+	process(Btn)
+		begin
+			if falling_edge(Btn) then
+			poz &lt;= poz + 1; 
+	
+			if poz = x"3" then 
+				poz &lt;= "001";
+			end if;
+			
+		end if;
+		end process;
+
+process(poz)
+	variable l : std_logic_vector (6 downto 0) := (others =&gt; '0');
+		begin
+
+
+			
+			
+			case poz is
+				when "001" =&gt;  l:= "0110010"; 
+				when "010" =&gt; l:= "0111100"; 
+				when "011" =&gt;  l:= "1001011"; 
+				when others =&gt;l:= "0000000"; 
+			end case;	
+
+		testbit &lt;= l;
+		
+		end process;
+
+nr &lt;= testbit;
+END TypeArchitecture;</vhdl>
+  <vhdl name="NumaratorCicluSpalare">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Moga Eduard/Ricu Razvan
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY NumaratorCicluSpalare IS
+  PORT (
+  	StartNumarator : in std_logic;
+ 	FullTime : in std_logic_vector (7 downto 0);
+ 	CLK_1min : in std_logic;
+ 	Reset	    : in std_logic;
+	TimpNumarator : out std_logic_vector (7 downto 0)
+    );
+END NumaratorCicluSpalare;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF NumaratorCicluSpalare IS
+
+signal don : std_logic := '0';
+signal stop_time : std_logic_vector(7 downto 0) := "ZZZZZZZZ";
+signal stop : std_logic := '0';
+BEGIN
+
+	stop_time &lt;= FullTime;
+
+	process(Clk_1min,Reset, StartNumarator)
+	
+		variable t : std_logic_vector (7 downto 0) := "ZZZZZZZZ";
+		variable ok : std_logic := '0';
+		variable fct : std_logic := '0';
+		begin
+	if Reset = '1' then 
+				don&lt;='0';
+				ok:='0';
+				stop &lt;= '0';
+				
+	else
+		if stop = '0' then	
+			
+			if StartNumarator = '0' then
+				t := t;
+
+			else 
+				if falling_edge(Clk_1min) then
+		
+					if ok = '0' then
+						ok := '1';
+						t := FullTime;
+					else
+						t := t - 1;
+					end if;
+					if  t = "00000000" then
+						don &lt;= '1' ;
+						t := t;
+						stop &lt;= '1';
+					
+					end if;	
+				end if;	
+			end if;
+
+		else
+			t := t;
+		end if;
+		
+	end if;
+		--don &lt;=  fct;
+		TimpNumarator&lt;=t;
+		end process;	
+END TypeArchitecture;
+
+</vhdl>
+  <vhdl name="MUX_STAGE1_TIME">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Ricu Razvan
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUX_STAGE1_TIME IS
+  PORT (
+   
+  Stage1Time_Auto:in std_logic_vector(7 downto 0);
+   Stage1Time_Manual:in std_logic_vector(7 downto 0);
+    Enable_Manual: in std_logic;
+    Stage1time: out std_logic_vector(7 downto 0)
+    );
+END MUX_STAGE1_TIME;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF MUX_STAGE1_TIME IS
+
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+
+
+
+
+BEGIN
+
+	with Enable_Manual select Stage1time &lt;=
+	Stage1Time_Manual when '1',
+	Stage1Time_Auto when '0',
+	"00000000" when others; 
+	
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="MUX_STAGE2_TIME">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Ricu Razvan
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUX_STAGE2_TIME IS
+  PORT (
+  Stage2Time_Auto:in std_logic_vector(7 downto 0);
+    Stage2Time_Manual:in std_logic_vector(7 downto 0);
+    Enable_Manual: in std_logic;
+    Stage2time: out std_logic_vector(7 downto 0)
+    );
+END MUX_STAGE2_TIME;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF MUX_STAGE2_TIME IS
+
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+
+BEGIN
+
+	with Enable_Manual select Stage2time &lt;=
+	Stage2Time_Manual when '1',
+	Stage2Time_Auto when '0',
+	"00000000" when others; 
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="MUX_STAGE3_TIME">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :Ricu Razvan
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUX_STAGE3_TIME IS
+  PORT (
+  Stage3Time_Auto:in std_logic_vector(7 downto 0);
+    Stage3Time_Manual:in std_logic_vector(7 downto 0);
+    Enable_Manual: in std_logic;
+    Stage3time: out std_logic_vector(7 downto 0)
+    );
+END MUX_STAGE3_TIME;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF MUX_STAGE3_TIME IS
+
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+BEGIN
+	with Enable_Manual select Stage3time &lt;=
+	Stage3Time_Manual when '1',
+	Stage3Time_Auto when '0',
+	"00000000" when others; 
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="Numarator_stage1">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;Ricu Razvan/Moga Eduard
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;USE ieee.std_logic_unsigned.all;
+
+ENTITY Numarator_stage1 IS&#13;
+  PORT (&#13;
+  	Reset : in std_logic;
+  	Enable : in std_logic;
+ 	Time1 : in std_logic_vector (7 downto 0);
+ 	CLK_1min : in std_logic;
+ 	Done_stage1: out std_logic
+
+    );&#13;
+END Numarator_stage1;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF Numarator_stage1 IS&#13;
+
+signal aux : std_logic_vector (7 downto 0) := "11111111";
+
+
+
+signal don : std_logic := '0';
+signal stop_time : std_logic_vector(7 downto 0) := "11111111";
+signal stop : std_logic := '0';
+BEGIN
+
+	stop_time &lt;= Time1;
+
+	process(Clk_1min,Reset, enable)
+	
+		variable t : std_logic_vector (7 downto 0) := "11111111";
+		variable ok : std_logic := '0';
+		variable fct : std_logic := '0';
+		begin
+	if Reset = '1' then 
+				don&lt;='0';
+				ok:='0';
+				stop &lt;= '0';
+				
+	else
+		if stop = '0' then	
+			
+			if Enable = '0' then
+				t := t;
+
+			else 
+				if falling_edge(Clk_1min) then
+		
+					if ok = '0' then
+						ok := '1';
+						t := Time1;
+					else
+						t := t - 1;
+					end if;
+					if  t = "00000000" then
+						don &lt;= '1' ;
+						t := t;
+						stop &lt;= '1';
+					
+					end if;	
+				end if;	
+			end if;
+
+		else
+			t := t;
+		end if;
+		
+	end if;
+		--don &lt;=  fct;
+		end process;	
+
+
+Done_stage1 &lt;= don;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Numarator_stage2">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;  Ricu Razvan/Moga Eduard
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+USE ieee.std_logic_unsigned.all;
+
+
+ENTITY Numarator_stage2 IS&#13;
+  PORT (&#13;
+  Reset : in std_logic;
+  Enable : in std_logic;
+ 	Time2 : in std_logic_vector (7 downto 0);
+ 	CLK_1min : in std_logic;
+ 	Done_stage2: out std_logic
+    );&#13;
+END Numarator_stage2;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF Numarator_stage2 IS&#13;
+
+
+signal aux : std_logic_vector (7 downto 0) := "11111111";
+
+
+
+signal don : std_logic := '0';
+signal stop_time : std_logic_vector(7 downto 0) := "11111111";
+signal stop : std_logic := '0';
+BEGIN
+
+	stop_time &lt;= Time2;
+
+	process(Clk_1min,Reset, enable)
+	
+		variable t : std_logic_vector (7 downto 0) := "11111111";
+		variable ok : std_logic := '0';
+		variable fct : std_logic := '0';
+		begin
+	if Reset = '1' then 
+				don&lt;='0';
+				ok:='0';
+				stop &lt;= '0';
+				
+	else
+		if stop = '0' then	
+			
+			if Enable = '0' then
+				t := t;
+
+			else 
+				if falling_edge(Clk_1min) then
+		
+					if ok = '0' then
+						ok := '1';
+						t := Time2;
+					else
+						t := t - 1;
+					end if;
+					if  t = "00000000" then
+						don &lt;= '1' ;
+						t := t;
+						stop &lt;= '1';
+					
+					end if;	
+				end if;	
+			end if;
+
+		else
+			t := t;
+		end if;
+		
+	end if;
+		--don &lt;=  fct;
+		end process;	
+
+
+Done_stage2 &lt;= don;
+
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Numarator_stage3">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;  Ricu Razvan/Moga Eduard
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;USE ieee.std_logic_unsigned.all;
+
+ENTITY Numarator_stage3 IS&#13;
+  PORT (&#13;
+ 	Reset : in std_logic;
+   Enable: in std_logic;
+ 	Time3 : in std_logic_vector (7 downto 0);
+ 	CLK_1min : in std_logic;
+ 	Done_stage3: out std_logic
+    );&#13;
+END Numarator_stage3;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF Numarator_stage3 IS&#13;
+&#13;
+
+signal aux : std_logic_vector (7 downto 0) := "11111111";
+
+
+
+signal don : std_logic := '0';
+signal stop_time : std_logic_vector(7 downto 0) := "11111111";
+signal stop : std_logic := '0';
+BEGIN
+
+	stop_time &lt;= Time3;
+
+	process(Clk_1min,Reset, enable)
+	
+		variable t : std_logic_vector (7 downto 0) := "11111111";
+		variable ok : std_logic := '0';
+		variable fct : std_logic := '0';
+		begin
+	if Reset = '1' then 
+				don&lt;='0';
+				ok:='0';
+				stop &lt;= '0';
+				
+	else
+		if stop = '0' then	
+			
+			if Enable = '0' then
+				t := t;
+
+			else 
+				if falling_edge(Clk_1min) then
+		
+					if ok = '0' then
+						ok := '1';
+						t := Time3;
+					else
+						t := t - 1;
+					end if;
+					if  t = "00000000" then
+						don &lt;= '1' ;
+						t := t;
+						stop &lt;= '1';
+					
+					end if;	
+				end if;	
+			end if;
+
+		else
+			t := t;
+		end if;
+		
+	end if;
+		--don &lt;=  fct;
+		end process;	
+
+
+Done_stage3 &lt;= don;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Numarator_stage0">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :Ricu Razvan/Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Numarator_stage0 IS
+  PORT (
+  	RESET    : in std_logic;
+	Enable   : in std_logic;
+	Time0 : in std_logic_vector (7 downto 0);
+	Clk_1min  : in std_logic;
+
+	Done_stage0 : out std_logic 
+ 	
+    );
+END Numarator_stage0;
+
+
+ARCHITECTURE TypeArchitecture OF Numarator_stage0 IS
+
+signal aux : std_logic_vector (7 downto 0) := "11111111";
+
+
+
+signal don : std_logic := '0';
+signal stop_time : std_logic_vector(7 downto 0) := "11111111";
+signal stop : std_logic := '0';
+BEGIN
+
+	stop_time &lt;= Time0;
+
+	process(Clk_1min,Reset, enable)
+	
+		variable t : std_logic_vector (7 downto 0) := "11111111";
+		variable ok : std_logic := '0';
+		variable fct : std_logic := '0';
+		begin
+	if Reset = '1' then 
+				don&lt;='0';
+				ok:='0';
+				stop &lt;= '0';
+				
+	else
+		if stop = '0' then	
+			
+			if Enable = '0' then
+				t := t;
+
+			else 
+				if falling_edge(Clk_1min) then
+		
+					if ok = '0' then
+						ok := '1';
+						t := Time0;
+					else
+						t := t - 1;
+					end if;
+					if  t = "00000000" then
+						don &lt;= '1' ;
+						t := t;
+						stop &lt;= '1';
+					
+					end if;	
+				end if;	
+			end if;
+
+		else
+			t := t;
+		end if;
+		
+	end if;
+		--don &lt;=  fct;
+		end process;	
+
+
+Done_stage0 &lt;= don;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="divizor4se">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+
+ENTITY divizor4se IS
+  PORT (
+  	CLK_1sec : in std_logic;
+  	RST	    : in std_logic;
+  	CLK_4sec : out std_logic
+    );
+END divizor4se;
+
+
+
+ARCHITECTURE TypeArchitecture OF divizor4se IS
+
+signal semnal : std_logic := '0';
+BEGIN
+
+	process(CLK_1sec)
+	variable nr : integer := 0;
+		begin
+
+		if RST = '1' then
+			nr := 0 ;
+			semnal &lt;= '0';
+		else
+			if falling_edge(CLK_1sec) then
+				nr := nr + 1;
+
+			if nr = 2 then
+				nr := 0 ;
+				semnal &lt;= not semnal;
+			else 
+				semnal &lt;= semnal;
+				
+			end if;
+		end if;
+		end if;
+end process;
+
+CLK_4sec &lt;= semnal;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="UC">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Ricu Razvan/Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY UC IS
+  PORT (
+  		Door : in std_logic;
+  		Start_Program : in std_logic;
+  		RESET : in std_logic;
+  		ManualMod : in std_logic;
+  		PreWash	: in std_logic;
+  		ExtraRinse : in std_logic;
+  		CLK 		 : in std_logic;
+		------------------------------------------------- Intrari utilizator
+  		ModAuto 	: in std_logic_vector(7 downto 0);
+  		DoneStage0 : in std_logic;
+  		DoneStage1 : in std_logic;
+  		DoneStage2 : in std_logic;
+  		DoneStage3 : in std_logic;
+  		
+  		Temp			: in std_logic_vector (6 downto 0);
+  		-------------------------------------------------- Intrari de la resurse 
+		DoorLed 		: out std_logic;
+		Sel_Mod		: out std_logic_vector (4 downto 0);
+		Sel_PW		: out std_logic;
+		Sel_XR		: out std_logic;
+		Finish		: out std_logic;
+		En_St0		: out std_logic;
+		En_St1		: out std_logic;
+		En_St2		: out std_logic;
+		En_St3		: out std_logic;
+		En_FullTime	: out std_logic;
+		Sel50		: out std_logic;
+		Sel60 		: out std_logic;
+		Sel75 		: out std_logic;
+		FTMS			: out std_logic				-- final time mux selector
+  		
+    );
+END UC;
+
+
+
+
+ARCHITECTURE TypeArchitecture OF UC IS
+
+type STAGIU is (A_Init , B0_Manual , B1_Auto , C_Door , E_Start , F0_St0 , F1_St0 , G0_St1 , G1_St1 , H0_St2 , H1_St2 , I0_St3 , I1_St3 , J_Done);
+
+signal St , NextSt : STAGIU;
+
+
+BEGIN
+
+
+UPDATE : process(CLK, RESET)
+			begin
+
+				if RESET = '1' then 
+					St &lt;= A_Init;
+				elsif rising_edge(CLK) then
+					St &lt;= NextSt;
+				end if;
+				
+		
+			end process UPDATE;
+
+TRANZITIE : process(St,Door,Start_Program, ManualMod , ModAuto,DoneStage0, DoneStage1, DoneStage2 , DoneStage3,Reset)
+			begin
+
+				case St is 
+				when A_Init =&gt; if ManualMod = '1' then
+								NextSt &lt;= B0_Manual;
+							else
+								NextSt &lt;= B1_Auto;
+							end if;
+				when B0_Manual =&gt; 	NextSt &lt;= C_Door;
+
+				when B1_Auto   =&gt; NextSt   &lt;= C_Door;
+
+				when C_Door =&gt;  if Door = '0' then 
+								NextSt &lt;=  A_Init;
+							  else
+							  	NextSt &lt;=  E_Start;
+							  end if;
+
+				when E_Start =&gt; if Start_Program = '0' then
+								NextSt &lt;= C_Door;
+							else
+								NextSt &lt;= F0_St0;
+							end if;
+
+				when F0_St0 =&gt; if Door ='1' then
+				
+								if DoneStage0 = '1' then
+									NextSt &lt;= G0_St1;
+								else
+									NextSt &lt;= F0_St0;
+								end if;
+							else
+							
+								NextSt &lt;= F1_St0;
+							end if;
+							
+
+				when F1_St0 =&gt; if Door = '1' then 
+								NextSt &lt;= F0_St0;
+							else
+								NextSt &lt;= F1_St0;
+							end if;
+
+
+				when G0_St1 =&gt; if Door ='1' then
+				
+								if DoneStage1 = '1' then
+									NextSt &lt;= H0_St2;
+								else
+									NextSt &lt;= G0_St1;
+								end if;
+							else
+						
+								NextSt &lt;= G1_St1;
+							end if;
+
+				when G1_St1 =&gt; if Door = '1' then 
+							NextSt &lt;= G0_St1;
+						else
+							NextSt &lt;= G1_St1;
+						end if;
+
+
+				when H0_St2  =&gt; if Door ='1' then
+				
+								if DoneStage2 = '1' then
+									NextSt &lt;= I0_St3;
+								else
+									NextSt &lt;= H0_St2;
+								end if;
+							else
+							
+								NextSt &lt;= H1_St2;
+							end if;
+
+				when H1_St2 =&gt; if Door = '1' then 
+							NextSt &lt;= H0_St2;
+						else
+							NextSt &lt;= H1_St2;
+						end if;
+
+
+
+				when I0_St3  =&gt; if Door ='1' then
+				
+								if ModAuto = "00000001" then
+									NextSt &lt;= J_Done;
+								else
+									if DoneStage3 = '1' then
+										NextSt &lt;= J_Done;
+									else
+										NextSt &lt;= I0_St3;
+									end if;
+								end if;
+							else
+							
+								NextSt &lt;= I1_St3;
+							end if;
+
+				when I1_St3 =&gt; if Door = '1' then 
+							NextSt &lt;= I0_St3;
+						else
+							NextSt &lt;= I1_St3;
+						end if;
+
+
+				when J_Done =&gt; if Door = '1' then
+								NextSt &lt;= J_Done;
+							else
+								NextSt &lt;= A_Init;
+							end if;
+
+						
+				end case;
+
+
+			end process TRANZITIE;
+
+Iesire :  process(St,Temp,ModAuto,Door,DoneStage0,DoneStage1,DoneStage2,DoneStage3)
+			begin
+				Sel_Mod &lt;= "00000";
+				Sel_Pw &lt;= '0';
+				Sel_XR &lt;= '0';
+				Finish &lt;= '0';
+				En_St0 &lt;= '0';
+				En_St1 &lt;= '0';
+				En_St2 &lt;= '0';
+				En_St3 &lt;= '0';
+				En_FullTime &lt;= '0';
+		
+				Sel50 &lt;= '0';
+				Sel60 &lt;= '0';
+				Sel75 &lt;= '0';
+				
+				FTMS &lt;= '0';
+				DoorLed &lt;= '0';
+
+				case St is
+
+				when A_Init =&gt; 	
+				Sel_Mod &lt;= "00000";
+				Sel_Pw &lt;= '0';
+				Sel_XR &lt;= '0';
+				Finish &lt;= '0';
+				En_St0 &lt;= '0';
+				En_St1 &lt;= '0';
+				En_St2 &lt;= '0';
+				En_St3 &lt;= '0';
+				En_FullTime &lt;= '0';
+		
+				Sel50 &lt;= '0';
+				Sel60 &lt;= '0';
+				Sel75 &lt;= '0';
+				
+				FTMS &lt;= '0';
+				DoorLed &lt;= '0';
+
+				
+				when B0_Manual =&gt;  FTMS &lt;= '0';
+								Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							    
+				when B1_Auto =&gt;FTMS &lt;= '0';    
+				if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+							    else
+							    Sel_Mod &lt;= "00000";
+							    Sel_XR &lt;= '0';
+							    Sel_PW &lt;= '0';
+							    Sel50 &lt;= '0';
+							    Sel60 &lt;= '0';
+							    Sel75 &lt;= '0';
+							   
+							    end if;
+							    
+					when C_DOOR =&gt;FTMS &lt;= '0'; 
+					if Door = '1' then
+									DoorLed &lt;= '1';
+									
+								else 
+									DoorLed &lt;= '0';
+																			
+								end if;
+
+					when E_Start =&gt;  FTMS&lt;='0';
+					 if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						
+							   else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							    end if;
+
+
+					when F0_St0 =&gt;  FTMS&lt;='1';En_FullTime&lt;='1';DoorLed&lt;='1';En_St0&lt;='1';
+				
+					 if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						
+							   else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							    end if;
+					
+								 
+					when F1_St0 =&gt;	
+					
+					 if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+							    En_FullTime &lt;= '0';
+								En_St0 &lt;= '0';
+								En_St1 &lt;= '0';
+								En_St2 &lt;= '0';
+								En_St3 &lt;= '0';
+								FTMS&lt;='1';
+						
+				when G0_St1 =&gt;FTMS&lt;='1';En_FullTime&lt;='1';DoorLed&lt;='1';	En_St1&lt;='1';
+				
+				 if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+							    
+		
+								 
+					when G1_St1 =&gt;	
+					
+					 if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+							 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+							    En_FullTime &lt;= '0';
+								En_St0 &lt;= '0';
+								En_St1 &lt;= '0';
+								En_St2 &lt;= '0';
+								En_St3 &lt;= '0';
+								FTMS&lt;='1';
+						
+				when H0_St2 =&gt;  FTMS&lt;='1';En_FullTime&lt;='1';DoorLed&lt;='1';En_St2&lt;='1';
+				
+					if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+				
+			
+								 
+					when H1_St2 =&gt; 
+					
+					if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+					En_FullTime &lt;= '0';
+								En_St0 &lt;= '0';
+								En_St1 &lt;= '0';
+								En_St2 &lt;= '0';
+								En_St3 &lt;= '0';
+								FTMS&lt;='1';
+
+					when I0_St3 =&gt;FTMS&lt;='1';En_FullTime&lt;='1';DoorLed&lt;='1';
+						En_St3&lt;='1';
+					
+					if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+					
+								 
+					when I1_St3 =&gt;	
+				
+					if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+					En_FullTime &lt;= '0';
+								En_St0 &lt;= '0';
+								En_St1 &lt;= '0';
+								En_St2 &lt;= '0';
+								En_St3 &lt;= '0';
+								FTMS&lt;='1';
+					when J_Done =&gt;
+					Finish&lt;='1';
+					FTMS&lt;='1';
+					En_FullTime&lt;='0';
+					if ModAuto = "00000001" then
+							    Sel_Mod &lt;= "01000";
+							    Sel75 &lt;= '1';
+							    
+							    
+							    elsif ModAuto = "00000010" then
+							    Sel_Mod &lt;="00100";
+							    Sel_PW &lt;='1';
+							    Sel60 &lt;='1';
+							   
+
+							    elsif ModAuto = "00000100" then
+							    Sel_Mod &lt;= "00010";
+							    Sel_PW &lt;= '1';
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+
+							    elsif ModAuto = "00011000" then
+							    Sel_Mod &lt;="00001";
+							    Sel_XR &lt;= '1';
+							    Sel50 &lt;='1';
+							    
+							    elsif ModAuto = "00101000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel60 &lt;= '1';
+							   
+							    elsif ModAuto = "01001000" then
+							    Sel_Mod &lt;= "00001";
+							    Sel_XR &lt;= '1';
+							    Sel75 &lt;= '1';
+							  
+						 else
+							   Sel_PW &lt;= PreWash;
+							    Sel_XR &lt;= ExtraRinse;
+							   
+							 
+							    Sel_Mod &lt;= "10000";
+							    if Temp = "0110010" then 
+							    Sel50 &lt;= '1'; Sel60 &lt;= '0' ; Sel75 &lt;= '0';
+							    elsif Temp = "0111100" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '1' ; Sel75 &lt;= '0';	
+							    elsif Temp = "1001011" then
+							    Sel50 &lt;= '0'; Sel60 &lt;= '0' ; Sel75 &lt;= '1';
+							    end if;
+							   
+							    end if;
+				end case;
+
+			end process Iesire;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="mux_final_time">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY mux_final_time IS&#13;
+  PORT (&#13;
+  FullTime:in std_logic_vector(7 downto 0);
+  TimpNumarator:in std_logic_vector(7 downto 0);
+  Ok_Button: in std_logic;
+  TimpAfisor:out std_logic_vector(7 downto 0)
+    );&#13;
+END mux_final_time;&#13;
+&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF mux_final_time IS&#13;
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+
+
+BEGIN
+	with Ok_Button select TimpAfisor &lt;=
+	FullTime when '0',
+	TimpNumarator when '1',
+	"00000000" when others; 
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="MUX_STAGE0_TIME">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY MUX_STAGE0_TIME IS&#13;
+  PORT (&#13;
+  Stage0Time_Auto:in std_logic_vector(7 downto 0);
+    Stage0Time_Manual:in std_logic_vector(7 downto 0);
+    Enable_Manual: in std_logic;
+    Stage0time: out std_logic_vector(7 downto 0)
+    );&#13;
+END MUX_STAGE0_TIME;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF MUX_STAGE0_TIME IS&#13;
+&#13;
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+
+BEGIN
+	with Enable_Manual select Stage0time &lt;=
+	Stage0Time_Manual when '1',
+	Stage0Time_Auto when '0',
+	"00000000" when others; 
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Mux_Temperature">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Ricu Razvan
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY Mux_Temperature IS&#13;
+  PORT (&#13;
+   TempAuto: in std_logic_vector(6 downto 0);
+   TempManual: in std_logic_vector(6 downto 0);
+   Enable_Manual: in std_logic;
+Temp:out std_logic_vector(6 downto 0)
+   
+    );&#13;
+END Mux_Temperature;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF Mux_Temperature IS&#13;
+&#13;
+signal  t1 : std_logic_vector (6 downto 0) := "0000000";
+
+
+
+
+BEGIN
+
+	with Enable_Manual select Temp &lt;=
+	TempManual when '1',
+	TempAuto when '0',
+	"0000000" when others; 
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="CodificatorAuto">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY CodificatorAuto IS
+  PORT (
+  		En : in std_logic;
+  		Mods :  in std_logic_vector (3 downto 0);
+ 		Temp : in std_logic_vector ( 2 downto 0);
+ 		
+
+		InformatieTM : out std_logic_vector (7 downto 0)
+    );
+END CodificatorAuto;
+
+
+
+ARCHITECTURE TypeArchitecture OF CodificatorAuto IS
+
+signal semnal : std_logic_vector (7 downto 0):= (others =&gt; '0');
+signal semnal2 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+signal semnal3 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+signal ok : std_logic := '0';
+BEGIN
+
+	process(En, Mods)
+	variable info : std_logic_vector(7 downto 0) := (others =&gt; '0');
+		begin 
+				if En = '0' then info := (others =&gt; '1');
+				ok &lt;= '0';
+				else
+
+					case Mods is 
+
+					when "0001" =&gt; info := "00000001"; ok &lt;= '0';
+					when "0010" =&gt; info := "00000010"; ok &lt;= '0';
+					when "0100" =&gt; info := "00000100"; ok &lt;= '0';
+					when "1000" =&gt; info := "00001000"; ok &lt;= '1';
+					when others =&gt; info:= "11111111"; ok &lt;= '0';
+					end case;
+					
+				end if;
+				semnal &lt;= info;
+				
+		end process;
+
+	process(En,Temp)
+	variable info : std_logic_vector(7 downto 0) := (others =&gt; '1');
+	
+		begin
+
+		if En = '0' then info := "00000000";
+		else
+			if ok = '1' then 
+				case Temp is
+				when "001" =&gt; info := "00010000";
+				when "010" =&gt; info := "00100000";
+				when "100" =&gt; info := "01000000";
+				when others =&gt; info := "00000000";
+				end case;
+			else
+				info := "00000000";
+			end if;
+	 	end if;
+
+		
+			semnal2 &lt;= info;
+
+		end process;
+
+semnal3 &lt;= semnal + semnal2;
+
+InformatieTM &lt;= semnal3;
+END TypeArchitecture;</vhdl>
+  <vhdl name="DecoderAuto">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY DecoderAuto IS
+  PORT (
+	
+	StringCod : in std_logic_vector (7 downto 0);
+	TimeStage0 : out std_logic_vector (7 downto 0);
+	TimeStage1 : out std_logic_vector (7 downto 0);	
+     TimeStage2 : out std_logic_vector (7 downto 0);
+    	TimeStage3 : out std_logic_vector (7 downto 0);
+    	FullTime 	 : out std_logic_vector (7 downto 0);
+    	Temp		 : out std_logic_vector (6 downto 0)	
+	    );
+END DecoderAuto;
+
+
+
+ARCHITECTURE TypeArchitecture OF DecoderAuto IS
+
+signal t0 : std_logic_vector (7 downto 0);
+signal t1 : std_logic_vector (7 downto 0);
+signal t2 : std_logic_vector (7 downto 0);
+signal t3 : std_logic_vector (7 downto 0);
+signal tful : std_logic_vector (7 downto 0);
+signal tmp : std_logic_vector (6 downto 0);
+BEGIN
+
+	process(StringCod)
+	variable aux : std_logic_vector (7 downto 0) := (others =&gt; '0');
+	variable aux2 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+	variable aux3 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+	variable aux4 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+	variable aux5 : std_logic_vector (7 downto 0) := (others =&gt; '0');
+	variable aux6 : std_logic_vector (6 downto 0) := (others =&gt; '0');
+		begin
+
+			case StringCod is 
+				when "11111111" =&gt; aux := (others =&gt; '0');
+							    aux2 := (others =&gt; '0');
+							    aux3 := (others =&gt; '0');
+							    aux4 := (others =&gt; '0');
+							    aux5 := (others =&gt; '0');
+							    aux6 := (others =&gt; '0');
+							    
+				when "00000001" =&gt; aux :=  "00000100";			-- stage0
+							    aux2 := "00110001";			-- stage1
+							    aux3 := "00000101";			-- stage2
+							    aux4 := "00000000";			-- stage3
+							    aux5 := "00111010";			-- FULLTIME
+							    aux6 := "1001011";			-- temp
+							    
+				when "00000010" =&gt; aux :=  "00001110";
+							    aux2 := "00100010";
+							    aux3 := "10000101";
+							    aux4 := "00011100";
+							    aux5 := "11010010";
+							    aux6 := "0111100";
+							    
+				when "00000100" =&gt; aux :=  "00001110";
+							    aux2 := "00110001";
+							    aux3 := "01010011";
+							    aux4 := "00011100";
+							    aux5 := "10101111";
+							    aux6 := "1001011";
+							    
+				when "00011000" =&gt; aux :=  "00000100";
+							    aux2 := "00011000";
+							    aux3 := "01011101";
+							    aux4 := "00011100";
+							    aux5 := "10010110";
+							    aux6 := "0110010";
+							    
+				when "00101000" =&gt; aux :=  "00000100";
+							    aux2 := "00100010";
+							    aux3 := "01010011";
+							    aux4 := "00011100";
+							    aux5 := "10010110";						
+							    aux6 := "0111100";
+							    
+				when "01001000" =&gt; aux :=  "00000100";
+							    aux2 := "00110001";
+							    aux3 := "01000100";
+							    aux4 := "00011100";
+							    aux5 := "10010110";
+							    aux6 := "1001011";
+							    
+				when others 	=&gt;   aux := (others =&gt; '0');
+							    aux2 := (others =&gt; '0');
+							    aux3 := (others =&gt; '0');
+							    aux4 := (others =&gt; '0');
+							    aux5 := (others =&gt; '0');
+							    aux6 := (others =&gt; '0');
+							    			    			    
+							    			 
+			end case;
+
+				t0 &lt;= aux;
+				t1 &lt;= aux2;
+				t2 &lt;= aux3;
+				t3 &lt;= aux4;
+				tful &lt;= aux5;
+				tmp &lt;= aux6;
+		end process;
+
+		TimeStage0 &lt;= t0;
+		TimeStage1 &lt;= t1;
+		TimeStage2 &lt;= t2;
+		TimeStage3 &lt;= t3;
+		FullTime &lt;= tful;
+		Temp &lt;= tmp;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="converter">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   : Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+USE ieee.std_logic_unsigned.all;
+ENTITY converter IS
+  PORT (
+ 		A : in std_logic_vector (7 downto 0);
+
+ 		n1 : out std_logic_vector (3 downto 0);
+ 		n2 : out std_logic_vector (3 downto 0);
+ 		n3 : out std_logic_vector (3 downto 0)
+    );
+END converter;
+
+
+
+
+
+ARCHITECTURE TypeArchitecture OF converter IS
+signal cif1 : std_logic_vector(3 downto 0) := "0000";
+signal cif2 : std_logic_vector(3 downto 0) := "0000";
+signal cif3 : std_logic_vector(3 downto 0) := "0000";
+
+
+signal int : integer := 0;
+signal aux : integer :=0;
+signal o1  : integer := 0;
+signal o2  : integer := 0;
+signal o3  : integer := 0;
+
+
+BEGIN
+
+	--o1 &lt;= to_integer(unsigned(A));
+	--o2 &lt;= o1 mod 10;
+	--o3 &lt;= o1 / 10;
+	--cif1 &lt;= std_logic_vector(to_unsigned(o2,cif1'length));
+	--cif2 &lt;= std_logic_vector(to_unsigned(o3,cif2'length));
+	--n1 &lt;= cif1;
+	--n2 &lt;= cif2;
+
+	int &lt;= to_integer(unsigned(A));
+
+	o1 &lt;= int mod 10;
+	aux &lt;= int / 10;
+	o2 &lt;= aux mod 10;
+	o3 &lt;= aux /10;
+
+	cif1 &lt;= std_logic_vector(to_unsigned(o1,cif1'length));
+	cif2 &lt;= std_logic_vector(to_unsigned(o2,cif2'length));
+	cif3 &lt;= std_logic_vector(to_unsigned(o3,cif3'length));
+
+	n1 &lt;= cif1;
+	n2 &lt;= cif2;
+	n3 &lt;= cif3;
+	
+
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="muxfinaltime2">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13; Moga Eduard
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY muxfinaltime2 IS
+  PORT (
+  FullTimeAuto:in std_logic_vector(7 downto 0);
+  FullTimeManual:in std_logic_vector(7 downto 0);
+  Enable_Manual: in std_logic;
+  FullTime:out std_logic_vector(7 downto 0)
+    );
+END muxfinaltime2;
+
+
+ARCHITECTURE TypeArchitecture OF muxfinaltime2 IS
+signal  t1 : std_logic_vector (7 downto 0) := "00000000";
+
+
+BEGIN
+	with Enable_Manual select FullTime &lt;=
+	FullTimeAuto when '0',
+	FullTimeManual when '1',
+	"00000000" when others; 
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssd_lit">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+ --Moga Eduard
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+ --Un SSD care afiseaza Error(ERR) in caz de selectare gresita a modurilor(Pentru Optimizari si Update-uri viitoare) 
+-- Acesta trebuie conectat la un mux cu afisorul de timp pentru a selecta in functie de stagiul in care ne aflam care dintre valori vrem sa le afisam
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.std_logic_unsigned.all;
+ENTITY ssd_lit IS
+  PORT (
+  	input : in std_logic;
+  	CLK   : in std_logic;
+  	anod	 : out std_logic_vector (2 downto 0);
+  	catod : out std_logic_vector (6 downto 0)
+    );
+END ssd_lit;
+
+
+ARCHITECTURE TypeArchitecture OF ssd_lit IS
+
+signal poz : std_logic_vector (2 downto 0) :="000";
+signal l1 : std_logic_vector (3 downto 0) := "0001";
+signal l2 : std_logic_vector (3 downto 0) := "0010";
+signal litera : std_logic_vector (3 downto 0) := "0000";
+BEGIN
+
+	process(CLK)
+		begin
+			if rising_edge(CLK) then
+				poz &lt;= poz +1;
+			end if;
+			
+		end process;
+
+	process(poz)
+		begin
+
+			case poz is 
+				when "001" =&gt;
+					anod &lt;= "100";
+					litera &lt;= l1;
+				when "010" =&gt;
+					anod &lt;= "010";
+					litera &lt;= l2;
+				when "011" =&gt;
+					anod &lt;= "001";
+					litera &lt;= l2;
+		
+				when others =&gt;
+					anod &lt;="000";
+			end case;
+
+		end process;
+
+
+	process(litera)
+		begin
+			if input = '0' then
+				case litera is 
+					when "0001" =&gt;
+						catod &lt;= "1111001";
+					when "0010" =&gt;
+						catod &lt;= "1010000";
+					when others =&gt;
+						catod &lt;="0000000";
+				end case;
+			else
+				catod &lt;="0000000";
+			 end if;
+				
+
+
+		end process;
+	
+	
+
+END TypeArchitecture;
+</vhdl>
+</project>
